@@ -1,0 +1,8 @@
+// the clearfix hack appends a pseudoelement after the element that then clears the floats
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

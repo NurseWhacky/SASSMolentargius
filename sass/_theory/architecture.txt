@@ -1,0 +1,6 @@
+7-1 architecture
+https://sass-guidelin.es/#architecture
+https://sass-guidelin.es/#the-7-1-pattern
+
+Responsive design
+=> this project uses float layouts

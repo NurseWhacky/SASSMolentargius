@@ -81,7 +81,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #f668bd, #a70476);
+  background-image: linear-gradient(to right, #f781c8, #ab0078ce);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -90,11 +90,27 @@ body {
     transform: skewY(2deg) skewX(-1deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 /* pseudo-classes: see in mdn how they work! */
 .btn:link, .btn:visited {
@@ -105,7 +121,8 @@ body {
   display: inline-block;
   border-radius: 150px;
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  font-size: 1.6rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -140,9 +157,28 @@ body {
   animation: moveInBottom 1500ms ease-out 500ms;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #ab0078ce;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #ab0078ce;
+  padding: 3px;
+  transition: all .35s; }
+
+.btn-text:hover {
+  background-color: #d73a98;
+  color: #fff;
+  box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: translateY(0); }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(246, 104, 189, 0.39), rgba(167, 4, 118, 0.272)), url(../img/fenicotteri.jpg);
+  background-image: linear-gradient(to right bottom, rgba(247, 129, 200, 0.39), rgba(171, 0, 120, 0.272)), url(../img/fenicotteri.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -196,5 +232,5 @@ body {
 
 .section-about {
   background-color: #f6b1dc37;
-  padding: 25rem;
+  padding: 25rem 0;
   margin-top: -20vh; }

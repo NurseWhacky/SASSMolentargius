@@ -2,14 +2,22 @@
 $color-primary: #d73a98;
 $color-primary-light: #f781c8;
 $color-primary-dark: #ab0078ce;
-$color-dark-prune: #58033b33;
+$color-dark-prune: hsla(320, 93%, 18%, 0.2);
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
 
 $color-grey-light-1: #f6b1dc37;
-
 $color-grey-light: #eee;
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+// Shadows
+$shadow-1: 0 1.5rem 3rem rgba($color-dark-prune, .5);
+
 
 // Font
 $default-font-size: 1.6rem;
@@ -17,4 +25,4 @@ $default-font-size: 1.6rem;
 // Grid
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
-$gutter-horizontal: 6rem;
+$gutter-horizontal: 5rem;

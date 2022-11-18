@@ -2,12 +2,15 @@
 $color-primary: #d73a98;
 $color-primary-light: #f781c8;
 $color-primary-dark: #ab0078ce;
-$color-dark-prune: hsla(320, 93%, 18%, 0.2);
+$color-dark-prune: rgba(89, 3, 60, 0.2);
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
+
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
+$color-quaternary-light: #7ed56f;
+$color-quaternary-dark: #28b485;
 
 $color-grey-light-1: #f6b1dc37;
 $color-grey-light: #eee;
@@ -15,8 +18,16 @@ $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
 
+$details-img-effect-1: linear-gradient(to right bottom, rgba($color-tertiary-light, .2), rgba($color-tertiary-dark, .2));
+$details-img-effect-2: linear-gradient(to right bottom, rgba($color-secondary-light, .2), rgba($color-secondary-dark, .2));
+$details-img-effect-3: linear-gradient(to right bottom, rgba($color-quaternary-light, .2), rgba($color-quaternary-dark, .2));
+
 // Shadows
 $shadow-1: 0 1.5rem 3rem rgba($color-dark-prune, .5);
+
+// Clip-paths
+$header-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+$card-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
 
 // Font

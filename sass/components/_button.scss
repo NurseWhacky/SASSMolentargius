@@ -35,6 +35,15 @@
           background-color: $color-white;
         }
     }
+
+    &--green {
+      background-color: $color-quaternary-light;
+      color: $color-grey-dark;
+
+      &::after {
+        background-color: rgba($color-quaternary-dark, .5);
+      }
+    }
     
     &::after {
       content: '';

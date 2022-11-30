@@ -1,67 +1,74 @@
 /* pseudo-classes: see in mdn how they work! */
 .btn {
-    &:link, 
-    &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 15px 40px; /* 2 params==top+bottom & left+right*/
-        display: inline-block;
-        border-radius: 150px;
-        transition: all 0.2s;
-        position: relative;
-        font-size: $default-font-size;
-    }
-    
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 30px $color-dark-prune;
-        
-        &::after {
-          transform: scaleX(1.4) scaleY(1.7);
-          opacity: 0;
-        }
-    }
-    
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 10px $color-dark-prune;
-    }
-    
-    &--white {
-        background-color: $color-white;
-        color: $color-grey-dark;
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-grey-dark;
+    padding: 1.5rem 4rem; /* 2 params==top+bottom & left+right*/
+    display: inline-block;
+    border-radius: 150px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
 
-        &::after {
-          background-color: $color-white;
-        }
-    }
+    // customizing <button> element
+    border: none;
+    cursor: pointer;
+  }
 
-    &--green {
-      background-color: $color-quaternary-light;
-      color: $color-grey-dark;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px $color-dark-prune;
 
-      &::after {
-        background-color: rgba($color-quaternary-dark, .5);
-      }
-    }
-    
     &::after {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 100px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all 0.5s;
+      transform: scaleX(1.4) scaleY(1.7);
+      opacity: 0;
     }
-    
-    &--animated {
-      animation: moveInBottom 1500ms ease-out 500ms;
-      animation-fill-mode: backwards;
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px $color-dark-prune;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
     }
+  }
+
+  &--green {
+    background-color: $color-quaternary-light;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: rgba($color-quaternary-dark, 0.5);
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  &--animated {
+    animation: moveInBottom 1500ms ease-out 500ms;
+    animation-fill-mode: backwards;
+  }
 }
 
 .btn-text {
@@ -73,18 +80,18 @@
     text-decoration: none;
     border-bottom: 1px solid $color-primary-dark;
     padding: 3px;
-    transition: all .35s;
+    transition: all 0.35s;
   }
 
   &:hover {
-    background-color: $color-primary-light;
+    background-color: /*$color-primary-light*/ $color-dark-prune;
     color: $color-white;
-    box-shadow: 0 1rem 2.2rem rgba($color-black, .3);
+    box-shadow: 0 1rem 2.2rem rgba($color-black, 0.3);
     transform: translateY(-1px);
   }
 
   &:active {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
     transform: translateY(0);
   }
 }

@@ -2,7 +2,7 @@
 $color-primary: #d73a98;
 $color-primary-light: #f781c8;
 $color-primary-dark: #ab0078ce;
-$color-dark-prune: rgba(89, 3, 60, 0.2);
+$color-dark-prune: rgb(89, 3, 60);
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
@@ -15,12 +15,15 @@ $color-quaternary-dark: #28b485;
 $color-grey-light-1: #f6b1dc37;
 $color-grey-light: #eee;
 $color-grey-dark: #777;
+$color-grey-dark-2: #222;
+$color-grey-dark-form: #aaa;
 $color-white: #fff;
 $color-black: #000;
 
 $details-img-effect-1: linear-gradient(to right bottom, rgba($color-tertiary-light, .2), rgba($color-tertiary-dark, .2));
 $details-img-effect-2: linear-gradient(to right bottom, rgba($color-secondary-light, .2), rgba($color-secondary-dark, .2));
 $details-img-effect-3: linear-gradient(to right bottom, rgba($color-quaternary-light, .2), rgba($color-quaternary-dark, .2));
+$details-img-effect-4: linear-gradient(to right bottom, rgba($color-primary-light, .7), rgba($color-primary, .7));
 
 // Shadows
 $shadow-1: 0 1.5rem 3rem rgba($color-dark-prune, .5);

@@ -2,8 +2,8 @@
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.39),
-      rgba($color-primary-dark, 0.272)
+      rgba($color-primary-light, 0.3),
+      rgba($color-primary-dark, 0.5)
     ),
     url(../img/fenicotteri.jpg);
   background-size: cover;
@@ -15,7 +15,9 @@
   &__logo {
     height: 10rem;
     border-radius: 50%;
-    opacity: .4;
+    filter: saturate(110%);
+    // filter: ;
+    // opacity: .4;
     
   }
 
@@ -27,10 +29,7 @@
   }
 
   &__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include centerHorizontalVertical;
     text-align: center;
   }
 }
